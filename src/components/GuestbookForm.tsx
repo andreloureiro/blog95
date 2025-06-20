@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Frame, Button, TextArea, Fieldset } from '@react95/core';
 import { User3, Message } from '@react95/icons';
-import { GuestbookEntry } from '../data/guestbookData.ts';
+import { GuestbookEntry } from '../data/guestbookData';
 
 interface GuestbookFormProps {
   onAddEntry: (entry: Omit<GuestbookEntry, 'id' | 'timestamp'>) => void;
