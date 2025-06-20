@@ -1,0 +1,336 @@
+/* Import VT323 font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  font-family: 'VT323', monospace;
+  line-height: 1.2;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #000;
+  background-color: #c0c0c0;
+
+  font-synthesis: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  font-family: 'VT323', monospace;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Global font family for all elements */
+* {
+  font-family: 'VT323', monospace;
+}
+
+/* Ensure form elements use VT323 font with larger sizes */
+button, input, textarea, select {
+  font-family: 'VT323', monospace;
+  font-size: 22px;
+}
+
+/* VT323 font styling adjustments */
+button {
+  font-weight: normal;
+  font-size: 22px;
+}
+
+input, textarea {
+  font-weight: normal;
+  font-size: 22px;
+}
+
+/* Make the text look more like Windows 95 with increased font sizes */
+* {
+  font-weight: normal;
+  letter-spacing: normal;
+}
+
+body {
+  font-size: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+span {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* Responsive design for mobile devices only */
+@media (max-width: 768px) {
+  /* Adjust padding for mobile */
+  body {
+    font-size: 18px;
+  }
+  
+  /* Smaller font sizes for mobile */
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  span {
+    font-size: 16px;
+  }
+  
+  /* Adjust form elements for mobile */
+  button, input, textarea, select {
+    font-size: 20px;
+    padding: 8px 12px;
+  }
+  
+  /* Make buttons more touch-friendly */
+  button {
+    min-height: 44px;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small screens */
+  body {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  span {
+    font-size: 14px;
+  }
+  
+  button, input, textarea, select {
+    font-size: 18px;
+  }
+}
+
+/* Responsive layout classes */
+.blog-container {
+  min-height: 100vh;
+  background-color: #c0c0c0;
+  padding: 20px;
+}
+
+.main-frame {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.article-frame {
+  margin-bottom: 15px;
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.article-image {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border: 2px inset #c0c0c0;
+  flex-shrink: 0;
+}
+
+.article-content {
+  flex: 1;
+}
+
+.article-metadata {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.metadata-items {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .blog-container {
+    padding: 10px;
+  }
+  
+  .main-frame {
+    margin: 0 5px;
+    padding: 15px;
+  }
+  
+  .article-frame {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .article-image {
+    width: 100%;
+    height: 200px;
+    align-self: center;
+  }
+  
+  .article-metadata {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+  
+  .metadata-items {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-container {
+    padding: 5px;
+  }
+  
+  .main-frame {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .metadata-items {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* Article page responsive styles */
+.article-hero-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.article-hero-content {
+  padding: 20px;
+}
+
+.article-hero-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.article-hero-meta-left {
+  font-size: 1.1rem;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.article-hero-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .article-hero-image {
+    height: 250px;
+  }
+  
+  .article-hero-content {
+    padding: 15px;
+  }
+  
+  .article-hero-meta {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+  
+  .article-hero-meta-left {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .article-hero-actions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-hero-image {
+    height: 200px;
+  }
+  
+  .article-hero-content {
+    padding: 10px;
+  }
+  
+  .article-hero-meta-left {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
