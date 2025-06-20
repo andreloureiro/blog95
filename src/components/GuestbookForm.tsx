@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Frame, Button, TextArea, Fieldset } from '@react95/core';
 import { User3, Message } from '@react95/icons';
-import { GuestbookEntry } from '../data/guestbookData';
+import { type GuestbookEntry } from '../data/guestbookData';
 
 interface GuestbookFormProps {
   onAddEntry: (entry: Omit<GuestbookEntry, 'id' | 'timestamp'>) => void;
@@ -118,7 +118,6 @@ const GuestbookForm: React.FC<GuestbookFormProps> = ({ onAddEntry, onCancel }) =
               style={{ width: '100%', fontSize: '1.1rem', padding: '8px' }}
               rows={1}
               maxLength={100}
-              type="email"
             />
           </div>
 
