@@ -70,6 +70,20 @@ Latest Articles
           ))}
         </Frame>
         
+        {/* Guestbook Link */}
+        <div style={{ textAlign: 'center', marginTop: '20px', marginBottom: '15px' }}>
+          <Link to="/guestbook" style={{ textDecoration: 'none' }}>
+            <Button style={{ 
+              fontSize: '1.2rem', 
+              padding: '10px 20px',
+              backgroundColor: '#008080',
+              color: 'white'
+            }}>
+              📖 Sign Our Guestbook
+            </Button>
+          </Link>
+        </div>
+        
         <div style={{ textAlign: 'center', fontSize: '0.8rem', color: '#666' }}>
           <p>© 1995 The Amazing Blog95 • Powered by Windows 95 Technology</p>
         </div>
