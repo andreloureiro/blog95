@@ -17,13 +17,13 @@ const HomePage: React.FC = () => {
           }}>
 The Amazing Blog95
           </h1>
-          <p style={{ fontSize: '1.1rem', color: '#000', marginBottom: '20px' }}>
+          <p style={{ fontSize: '1rem', color: '#000', marginBottom: '20px' }}>
             Your Premier Source for Technology News in the Digital Age
           </p>
         </div>
 
         <Frame variant="sunken" style={{ padding: '15px', marginBottom: '20px' }}>
-          <h2 style={{ color: '#000080', fontSize: '1.3rem', marginBottom: '15px' }}>
+          <h2 style={{ color: '#000080', fontSize: '2rem', marginBottom: '15px' }}>
 Latest Articles
           </h2>
           
@@ -39,14 +39,14 @@ Latest Articles
                 <h3 style={{ 
                   margin: '0 0 8px 0', 
                   color: '#000080',
-                  fontSize: '1.4rem'
+                  fontSize: '1.5rem'
                 }}>
                   {article.title}
                 </h3>
                 
                 <p style={{ 
                   margin: '0 0 10px 0', 
-                  fontSize: '1.2rem',
+                  fontSize: '1rem',
                   color: '#333',
                   lineHeight: '1.4'
                 }}>
@@ -62,7 +62,7 @@ Latest Articles
                   </div>
                   
                   <Link to={`/article/${article.id}`} style={{ textDecoration: 'none' }}>
-                    <Button style={{ fontSize: '1.2rem', padding: '8px 16px' }}>Read More</Button>
+                    <Button style={{ fontSize: '1rem', padding: '8px 16px' }}>Read More</Button>
                   </Link>
                 </div>
               </div>
@@ -84,7 +84,7 @@ Latest Articles
           </Link>
         </div>
         
-        <div style={{ textAlign: 'center', fontSize: '0.8rem', color: '#666' }}>
+        <div style={{ textAlign: 'center', fontSize: '0.875rem', color: '#666' }}>
           <p>© 1995 The Amazing Blog95 • Powered by Windows 95 Technology</p>
         </div>
       </Frame>
