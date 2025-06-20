@@ -204,3 +204,63 @@ body {
     gap: 5px;
   }
 }
+
+/* Guestbook-specific styles */
+.guestbook-entries {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.guestbook-entry {
+  border-left: 4px solid #000080;
+  background-color: #f0f0f0;
+}
+
+.guestbook-entry:hover {
+  background-color: #e8e8e8;
+}
+
+.guestbook-form {
+  background-color: #f8f8f8;
+}
+
+.visitor-counter {
+  background: linear-gradient(90deg, #000080, #0000FF);
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Responsive guestbook styles */
+@media (max-width: 768px) {
+  .guestbook-entries {
+    max-height: 60vh;
+  }
+  
+  .guestbook-entry div[style*="gap: 15px"] {
+    gap: 10px !important;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .guestbook-entry div[style*="marginLeft: auto"] {
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .guestbook-entries {
+    max-height: 50vh;
+    padding-right: 5px;
+  }
+  
+  .guestbook-entry {
+    padding: 10px !important;
+  }
+  
+  .guestbook-entry div[style*="gap: 15px"] {
+    gap: 8px !important;
+  }
+}
