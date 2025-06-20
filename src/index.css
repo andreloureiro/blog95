@@ -1,7 +1,4 @@
-/* Fallback font configuration since React95 GlobalStyle import is not working */
-body, html, * {
-  font-family: 'MS Sans Serif', 'Microsoft Sans Serif', sans-serif;
-}
+/* Fonts are now handled by React95 GlobalStyle */
 
 :root {
   color-scheme: light;
