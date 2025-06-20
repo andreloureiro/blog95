@@ -1,4 +1,7 @@
-/* Fonts are now handled by React95 GlobalStyle */
+/* React95 GlobalStyle provides the fonts, but we need to set font-family */
+body, html, *, input, textarea, button {
+  font-family: 'MS Sans Serif 8pt', 'MS Sans Serif', 'Microsoft Sans Serif', sans-serif;
+}
 
 :root {
   color-scheme: light;
