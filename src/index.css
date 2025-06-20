@@ -71,7 +71,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .metadata-items {
@@ -151,7 +151,7 @@ body {
 }
 
 .article-hero-meta-left {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #666;
   display: flex;
   align-items: center;

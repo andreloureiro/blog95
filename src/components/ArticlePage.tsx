@@ -59,7 +59,7 @@ const ArticlePage: React.FC = () => {
       <Frame variant="raised" className="main-frame">
         <div style={{ marginBottom: '20px' }}>
           <Link to="/" style={{ textDecoration: 'none' }}>
-            <Button style={{ fontSize: '1.2rem', padding: '8px 16px' }}>← Back to Blog95</Button>
+            <Button style={{ fontSize: '1rem', padding: '8px 16px' }}>← Back to Blog95</Button>
           </Link>
         </div>
 
@@ -72,7 +72,7 @@ const ArticlePage: React.FC = () => {
           />
           <div className="article-hero-content">
             <h1 style={{ 
-              fontSize: '2rem', 
+              fontSize: '2.5rem', 
               color: '#000080', 
               margin: '0 0 10px 0',
             }}>
@@ -92,7 +92,7 @@ const ArticlePage: React.FC = () => {
                     display: 'flex',
                     alignItems: 'center',
                     gap: '4px',
-                    fontSize: '1.2rem',
+                    fontSize: '1rem',
                     padding: '8px 16px'
                   }}
                 >
@@ -107,7 +107,7 @@ const ArticlePage: React.FC = () => {
         <Frame variant="sunken" style={{ padding: '20px', marginBottom: '30px' }}>
           <div style={{ 
             lineHeight: '1.6', 
-            fontSize: '1.2rem',
+            fontSize: '1rem',
             color: '#222'
           }}>
             {article.content.split('\n\n').map((paragraph, index) => (
@@ -122,7 +122,7 @@ const ArticlePage: React.FC = () => {
         <Frame variant="raised" style={{ padding: '20px' }}>
           <h2 style={{ 
             color: '#000080', 
-            fontSize: '1.5rem', 
+            fontSize: '2rem', 
             marginBottom: '20px',
             borderBottom: '2px solid #c0c0c0',
             paddingBottom: '10px'
@@ -138,7 +138,7 @@ Comments ({comments.length})
                 padding: '15px'
               }}>
                 <div style={{ 
-                  fontSize: '1.3rem', 
+                  fontSize: '1.125rem', 
                   fontWeight: 'bold', 
                   color: '#000080',
                   marginBottom: '5px',
@@ -149,7 +149,7 @@ Comments ({comments.length})
                   <User3 style={{ width: '16px', height: '16px' }} /> {comment.author}
                 </div>
                 <div style={{ 
-                  fontSize: '1.2rem', 
+                  fontSize: '0.875rem', 
                   color: '#666',
                   marginBottom: '10px',
                   display: 'flex',
@@ -158,7 +158,7 @@ Comments ({comments.length})
                 }}>
                   <Time style={{ width: '16px', height: '16px' }} /> {comment.timestamp}
                 </div>
-                <div style={{ fontSize: '1.3rem', lineHeight: '1.4', color: '#333' }}>
+                <div style={{ fontSize: '1rem', lineHeight: '1.4', color: '#333' }}>
                   {comment.content}
                 </div>
               </Frame>
@@ -168,7 +168,7 @@ Comments ({comments.length})
           {/* Add Comment Form */}
           <Fieldset legend="Leave a Comment" style={{ padding: '20px' }}>
             <h3 style={{ 
-              fontSize: '1.4rem', 
+              fontSize: '1.5rem', 
               marginBottom: '15px',
               color: '#000080'
             }}>
@@ -179,7 +179,7 @@ Leave a Comment
               <label style={{ 
                 display: 'block', 
                 marginBottom: '5px',
-                fontSize: '1.3rem',
+                fontSize: '1rem',
                 fontWeight: 'bold',
                 color: '#333'
               }}>
@@ -194,7 +194,7 @@ Leave a Comment
                   width: '100%',
                   padding: '5px',
                   border: '2px inset #c0c0c0',
-                  fontSize: '1.1rem'
+                  fontSize: '1rem'
                 }}
               />
             </div>
@@ -203,7 +203,7 @@ Leave a Comment
               <label style={{ 
                 display: 'block', 
                 marginBottom: '5px',
-                fontSize: '1.3rem',
+                fontSize: '1rem',
                 fontWeight: 'bold',
                 color: '#333'
               }}>
@@ -221,7 +221,7 @@ Leave a Comment
             <Button 
               onClick={handleCommentSubmit}
               disabled={!newComment.trim() || !commentAuthor.trim()}
-              style={{ fontSize: '1.3rem', padding: '10px 20px' }}
+              style={{ fontSize: '1rem', padding: '10px 20px' }}
             >
 Post Comment
             </Button>
