@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Frame, Button, TextArea, Fieldset } from '@react95/core';
 import { User3, Date as DateIcon, Message, Time } from '@react95/icons';
-import { mockGuestbookEntries, visitorCount, GuestbookEntry } from '../data/guestbookData';
+import { mockGuestbookEntries, visitorCount, GuestbookEntry } from '../data/guestbookData.js';
 import GuestbookForm from './GuestbookForm';
 
 const GuestbookPage: React.FC = () => {
