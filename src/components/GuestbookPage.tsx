@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Frame, Button, TextArea, Fieldset } from '@react95/core';
-import { User3, Date as DateIcon, Message, Computer, Time } from '@react95/icons';
+import { User3, Date as DateIcon, Message, Time } from '@react95/icons';
 import { mockGuestbookEntries, visitorCount, GuestbookEntry } from '../data/guestbookData';
 import GuestbookForm from './GuestbookForm';
 
@@ -122,7 +122,7 @@ const GuestbookPage: React.FC = () => {
                     </div>
                     {entry.website && (
                       <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-                        <Computer style={{ width: '16px', height: '16px', color: '#666' }} />
+                        🌐
                         <a 
                           href={entry.website} 
                           style={{ fontSize: '0.95rem', color: '#0000FF', textDecoration: 'underline' }}

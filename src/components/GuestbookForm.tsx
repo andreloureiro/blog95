@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Frame, Button, TextArea, Fieldset } from '@react95/core';
-import { User3, Message, Computer } from '@react95/icons';
+import { User3, Message } from '@react95/icons';
 import { GuestbookEntry } from '../data/guestbookData';
 
 interface GuestbookFormProps {
@@ -131,8 +131,7 @@ const GuestbookForm: React.FC<GuestbookFormProps> = ({ onAddEntry, onCancel }) =
               fontSize: '1.1rem',
               fontWeight: 'bold'
             }}>
-              <Computer style={{ width: '16px', height: '16px' }} />
-              Homepage: <span style={{ fontSize: '0.9rem', color: '#666' }}>(optional)</span>
+              🌐 Homepage: <span style={{ fontSize: '0.9rem', color: '#666' }}>(optional)</span>
             </label>
             <TextArea
               value={formData.website}
