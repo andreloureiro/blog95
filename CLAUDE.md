@@ -46,7 +46,19 @@ npm run lint
 
 # Preview production build
 npm run preview
+
+# Deploy to GitHub Pages (manual)
+npm run deploy
 ```
+
+## Deployment
+
+The application is configured for GitHub Pages deployment:
+
+- **Automatic Deployment**: GitHub Actions workflow (`.github/workflows/deploy.yml`) automatically deploys on push to main branch
+- **Manual Deployment**: Use `npm run deploy` for manual deployment via gh-pages
+- **Base Path**: Configured for `/blog95/` path on GitHub Pages
+- **Build Output**: Generated in `dist/` directory with proper asset paths
 
 ## Important Implementation Details
 
